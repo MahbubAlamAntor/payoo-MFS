@@ -28,17 +28,18 @@
 
                     <!-- button started -->
 
-                    <div>
-                        <button class="btn btn-lg">Cash In</button>
-                        <button class="btn btn-lg">Cash Out</button>
+                    <div class="flex justify-center gap-3 flex-wrap">
+                        <button id="btn-cash-in" class="btn btn-lg">Cash In</button>
+                        <button id="btn-cash-out" class="btn btn-lg">Cash Out</button>
+                        <button id="btn-transction" class="btn btn-lg">Transtion Button</button>
                     </div>
                     <div class="divider"></div>
                     <!-- Form start -->
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="show-cash-in" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                           <div class="form-control">
                             <label class="label">
-                              <span class="label-text">Amount</span>
+                              <span class="label-text">Cash in Amount</span>
                             </label>
                             <input type="text" id="input-amount" placeholder="Enter Your Amount" class="input input-bordered" required />
                           </div>
@@ -57,7 +58,7 @@
 
                       
                       <!-- cash Out Form Start  -->
-                      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                      <div id="show-cash-out" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                           <div class="form-control">
                             <label class="label">
@@ -76,6 +77,13 @@
                           </div>
                         </form>
                       </div>
+
+                      <div id="transction-section" class="hidden">
+                        <h1 class="font-semibold text-4xl">Tranction History</h1>
+                        <div id="transction-container">
+
+                        </div>
+                      </div>
                       <!-- cash Out Form END -->
                 </div>
             </div>
@@ -87,6 +95,7 @@
 
     <script src="./js/utilities2.js"></script>
     <script src="./js/home2.js"></script>
+    <script src="./futures.js"></script>
 </body>
 
 </html>

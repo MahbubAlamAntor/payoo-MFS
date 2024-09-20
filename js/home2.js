@@ -1,3 +1,5 @@
+// cash in function section 
+
 document.getElementById('cash-in-btn').addEventListener('click', function(event){
     event.preventDefault();
     const inputAmount = getInputValue('input-amount');
@@ -8,10 +10,17 @@ document.getElementById('cash-in-btn').addEventListener('click', function(event)
         const newBalance = accountBalance + inputAmount;
 
         document.getElementById('account-balance').innerText = newBalance;
+
+        // const p = document.createElement('p');
+        // p.innerText = `Add Money: ${inputAmount} Tk..... New Balance: ${newBalance} Tk.`
+
+        // document.getElementById('transction-container').appendChild(p);
     }else{
         alert('oi mama na pls');
     }
 })
+
+// cash out function section 
 
 document.getElementById('cash-out-btn').addEventListener('click', function(event){
     event.preventDefault();
@@ -25,7 +34,15 @@ document.getElementById('cash-out-btn').addEventListener('click', function(event
         const accountNewBalance = accountMainBalance - cashOutAmount;
 
         document.getElementById('account-balance').innerText = accountNewBalance;
+
+        // const p = document.createElement('p');
+        // p.innerText = `Cash Out: ${cashOutAmount} Tk..... New Balance: ${accountNewBalance} Tk.`
+
+        // document.getElementById('transction-container').appendChild(p);
     }else{
         alert('oi mama na pls');
     }
 })
+
+
+// transtion history 
