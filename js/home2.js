@@ -11,6 +11,7 @@ document.getElementById('cash-in-btn').addEventListener('click', function(event)
 
         document.getElementById('account-balance').innerText = newBalance;
 
+        // transaction section started
         const p = document.createElement('p');
         p.innerText = `Add Money: ${inputAmount} Tk..... New Balance: ${newBalance} Tk.`
 
@@ -35,10 +36,16 @@ document.getElementById('cash-out-btn').addEventListener('click', function(event
 
         document.getElementById('account-balance').innerText = accountNewBalance;
 
-        const p = document.createElement('p');
-        p.innerText = `Cash Out: ${cashOutAmount} Tk..... New Balance: ${accountNewBalance} Tk.`
+        // transaction section started
+        const div = document.createElement('div');
+        div.classList.add('bg-yellow-200');
+        div.innerHTML = `
+            <h3>Cash Out Amount</h3>
+            <p>${cashOutAmount}tk.. New Balance ${accountNewBalance}</p>
+        `
 
-        document.getElementById('transction-container').appendChild(p);
+        document.getElementById('transction-container').appendChild(div);
+
     }else{
         alert('oi mama na pls');
     }
