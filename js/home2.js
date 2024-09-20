@@ -11,10 +11,10 @@ document.getElementById('cash-in-btn').addEventListener('click', function(event)
 
         document.getElementById('account-balance').innerText = newBalance;
 
-        // const p = document.createElement('p');
-        // p.innerText = `Add Money: ${inputAmount} Tk..... New Balance: ${newBalance} Tk.`
+        const p = document.createElement('p');
+        p.innerText = `Add Money: ${inputAmount} Tk..... New Balance: ${newBalance} Tk.`
 
-        // document.getElementById('transction-container').appendChild(p);
+        document.getElementById('transction-container').appendChild(p);
     }else{
         alert('oi mama na pls');
     }
@@ -35,10 +35,10 @@ document.getElementById('cash-out-btn').addEventListener('click', function(event
 
         document.getElementById('account-balance').innerText = accountNewBalance;
 
-        // const p = document.createElement('p');
-        // p.innerText = `Cash Out: ${cashOutAmount} Tk..... New Balance: ${accountNewBalance} Tk.`
+        const p = document.createElement('p');
+        p.innerText = `Cash Out: ${cashOutAmount} Tk..... New Balance: ${accountNewBalance} Tk.`
 
-        // document.getElementById('transction-container').appendChild(p);
+        document.getElementById('transction-container').appendChild(p);
     }else{
         alert('oi mama na pls');
     }
